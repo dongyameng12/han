@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <!-- force webkit on 360 -->
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <!-- force edge on IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- force full screen on some browser -->
+    <meta name="full-screen" content="yes"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/less.min.js"></script>
+    <title>北京移动抖音专区</title>
+</head>
+<body>
+<div class="body">
+    <!--头部logo-->
+    <div class="head">
+        <img src="img/logo.png">
+    </div>
+    <!--登录 及领取-->
+    <div class="sgin">
+        <!--登录-->
+        <div id="sginBox">
+            <!--登录领好礼-->
+            <img src="img/sgin_logo.png">
+            <!--最上层的小点-->
+            <img src="img/sgin_bg2.png">
+            <!--输入框  按钮-->
+            <ul>
+                <li>
+                    <div>
+                        <input id="inputTel" type="number" pattern="[0-9]*"
+                               oninput="if(value.length>11)value=value.slice(0,11)" placeholder="手机号">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input id="code" type="number" pattern="[0-9]*"
+                               oninput="if(value.length>6)value=value.slice(0,6)" placeholder="验证码">
+                        <span id="verificationCode">
+                            获取验证码
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <!--按钮-->
+                    <div id="sginIn"><p>立即登录</p></div>
+                </li>
+            </ul>
+        </div>
+        <!--点击登录-->
+        <div id="receive" class="prizes">
+            <!--可更换奖品图片 lq2.png-->
+            <img src="img/lq.png">
+            <a href="#">立即领取</a>
+        </div>
+        <!--手机号错误-->
+        <div id="tel" class="erro">
+			<div class="imgC" onclick="close(this)">
+				<img src="img/erroClose.png" >
+			</div>
+			<p>请输入正确的11位手机号码</p>
+            <div class="imgY">
+            	<img src="img/erroYes.png">
+            </div>
+        </div>
+        <!--验证码错误-->
+        <div id="pwd" class="erro">
+			<div class="imgC">
+				<img src="img/erroClose.png" >
+			</div>
+			<p>验证码错误  请重新输入</p>
+            <div class="imgY">
+            	<img src="img/erroYes.png">
+            </div>
+        </div>
+    </div>
+    <!--图标 点击跳转icon-->
+    <div class="icons">
+        <ul>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="img/icon1.png">
+                        <p>流量放心用</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="img/icon2.png">
+                        <p>宽带0元享</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="img/icon3.png">
+                        <p>万能副卡</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="img/icon4.png">
+                        <p>王卡免费领</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--幸运数字-->
+    <div>
+        <!--第一个活动-->
+        <div class="luckyNum">
+            <!--图片-->
+            <div>
+                <img src="img/3.png">
+            </div>
+            <!--信息和按钮-->
+            <div>
+                <span>
+                    <ul>
+                        <li>
+                            移动光宽带
+                            <!--火图标  有就加上 没有就去掉就行-->
+                            <!--<img src="img/fire.png">-->
+                        </li>
+                        <li>网络好、价格优、服务佳</li>
+                    </ul>
+                </span>
+                <span>
+                    <a href="#"><button>立即查看</button></a>
+                </span>
+            </div>
+        </div>
+        <!--第二个活动-->
+        <div class="luckyNum">
+            <!--图片-->
+            <div>
+                <img src="img/4.png">
+            </div>
+            <!--信息和按钮-->
+            <div>
+                <span>
+                    <ul>
+                        <li>
+                            靓号优选
+                            <!--火图标  有就加上 没有就去掉就行-->
+                            <img src="img/fire.png">
+                        </li>
+                        <li>号卡超市，总有一款适合您</li>
+                    </ul>
+                </span>
+                <span>
+                   <a href="#"><button>立即查看</button></a>
+                </span>
+            </div>
+        </div>
+        <!--第三个活动-->
+        <div class="luckyNum">
+            <!--图片-->
+            <div>
+                <img src="img/5.png">
+            </div>
+            <!--信息和按钮-->
+            <div>
+                <span>
+                    <ul>
+                        <li>
+                            福利专区
+                            <!--火图标  有就加上 没有就去掉就行-->
+                            <!--<img src="img/fire.png">-->
+                        </li>
+                        <li>超多福利免费领</li>
+                    </ul>
+                </span>
+                <span>
+                   <a href="#"><button>立即查看</button></a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>

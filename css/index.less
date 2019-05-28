@@ -1,0 +1,249 @@
+@import "set";
+.body {
+  width: 7.5rem;
+  user-select: none;
+  background: rgb(25, 0, 84);
+  padding-bottom: .5rem;
+  //头部
+  .head {
+    width: 7.5rem;
+    height: 5.62rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  //登录
+  .sgin {
+    width: 6.23rem;
+    height: 3.32rem;
+    margin: 0 auto;
+    background: rgb(232, 82, 19);
+    border-radius: .2rem;
+    overflow: hidden;
+    > div:nth-child(1) {
+      //display: none;
+      position: relative;
+      background: url("../img/sgin_bg1.png");
+      background-size: cover;
+      width: 6.23rem;
+      height: 3.32rem;
+      img:nth-child(1) {
+        position: absolute;
+        top: .2rem;
+        left: 50%;
+        margin-left: -1.43rem;
+        width: 2.86rem;
+        height: .53rem;
+      }
+      img:nth-child(2) {
+        position: absolute;
+        top: 0.7rem;
+        left: 0.2rem;
+        width: 5.41rem;
+        height: 2.18rem;
+      }
+      > ul {
+        position: absolute;
+        left: 50%;
+        top: 1rem;
+        list-style: none;
+        width: 4rem;
+        margin-left: -2rem;
+        li {
+          position: relative;
+          margin: 0.15rem auto;
+          div {
+            width: 4rem;
+            height: 0.5rem;
+            border: 1px solid white;
+            background: rgba(250, 250, 250, 0.2);
+            color: #FFFFFF;
+            display: flex;
+            border-radius: .1rem;
+            input {
+              border: 0;
+              width: 3.7rem;
+              height: .5rem;
+              line-height: .5rem;
+              color: #FFFFFF;
+              padding-left: .3rem;
+              background: transparent;
+              &::-webkit-outer-spin-button,
+              &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+              }
+            }
+            span {
+              position: absolute;
+              right: 0.05rem;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 1.5rem;
+              height: 0.36rem;
+              border: 1px solid white;
+              background: transparent;
+              border-radius: 0.1rem;
+              text-align: center;
+              font-size: 0.16rem;
+
+            }
+            .noClick{
+              pointer-events: none;
+            }
+          }
+        }
+        li:nth-child(2) {
+          div {
+            position: relative;
+            input {
+              border: 0;
+              width: 2.1rem;
+              color: #FFFFFF;
+              background: transparent;
+            }
+          }
+        }
+        li:nth-child(3) {
+          div {
+            border: none;
+            background: #ffa202;
+            width: 3rem;
+            height: 0.6rem;
+            position: absolute;
+            left: 50%;
+            margin-left: -1.5rem;
+            border-radius: .5rem;
+            p {
+              width: 3rem;
+              height: .6rem;
+              font-size: .3rem;
+              line-height: .6rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    > div:nth-child(2) {
+      display: none;
+      position: relative;
+      width: 6.23rem;
+      height: 3.32rem;
+      >img{
+        width: 100%;
+        height: 100%;
+      }
+      > a {
+        position: absolute;
+        left: 50%;
+        top: 2rem;
+        margin-left: -1.005rem;
+        width: 2.01rem;
+        height: .5rem;
+        background: rgb(255,179,1);
+        font-size: .27rem;
+        line-height: .5rem;
+        border-radius: .5rem;
+        text-align: center;
+        font-weight: bolder;
+        color: #FFFFFF;
+      }
+    }
+  }
+  //  图标 点击跳转icon
+  .icons {
+    width: 6.31rem;
+    height: 1.35rem;
+    margin: 0.5rem auto 0;
+    ul {
+      display: flex;
+      li {
+        width: 25%;
+        div {
+          width: 100%;
+          img {
+            width: 1.3rem;
+            height: .94rem;
+            margin-left: .2rem;
+          }
+          p {
+            width: 100%;
+            font-size: .24rem;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: .1rem;
+          }
+        }
+      }
+    }
+  }
+  //幸运数字
+  .luckyNum {
+    width: 6.23rem;
+    height: 3.97rem;
+    margin: .5rem auto 0;
+    border-radius: .2rem;
+    overflow: hidden;
+    > div:nth-child(1) {
+      height: 2.79rem;
+      background: rgb(250, 250, 250);
+      border-top-left-radius: .2rem;
+      border-top-right-radius: .2rem;
+      img {
+        width: 100%;
+      }
+    }
+    > div:nth-child(2) {
+      background: url("../img/num_bg.png");
+      background-size: cover;
+      height: 1.18rem;
+      border-bottom-left-radius: .2rem;
+      border-bottom-right-radius: .2rem;
+      display: flex;
+      span:nth-child(1) {
+        width: 4.04rem;
+        color: #FFFFFF;
+        > ul {
+          list-style: none;
+          font-size: .3144rem;
+          li {
+            padding-left: .2rem;
+            img {
+              width: .18rem;
+              height: .21rem;
+              vertical-align: middle;
+            }
+          }
+          li:nth-child(1) {
+            line-height: .5rem;
+            margin-top: .1rem;
+          }
+          li:nth-child(2) {
+            font-size: .2219rem;
+          }
+        }
+      }
+      span:nth-child(2) {
+        width: 2.19rem;
+        button {
+          border: 0;
+          outline: none;
+          width: 2.03rem;
+          height: .63rem;
+          background: rgb(255, 178, 21);
+          border-radius: .315rem;
+          color: #FFFFFF;
+          font-size: .3rem;
+          line-height: .63rem;
+          margin-top: .275rem;
+        }
+      }
+    }
+  }
+}
